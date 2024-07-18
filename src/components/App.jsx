@@ -3,7 +3,7 @@ import './App.css';
 import Card from './Card'
 
 function App() {
-  const numItems = 8;
+  const numItems = 9;
 
   const elements = [];
 
@@ -16,7 +16,12 @@ function App() {
   return (
     <div className='master'>
       <div className='navbar'></div>
-      <div className='body'>{elements}</div>
+      <div className='body'>
+        <h1>Itens components</h1>
+        <div className="body-itens">
+          {elements}
+        </div>
+      </div>
       <div className='footer'></div>
     </div>
   );

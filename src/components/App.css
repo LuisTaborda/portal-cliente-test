@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
-  --primary-color : #03b6b6;
+:root {
+  --primary-color: #03b6b6;
   --navbar-color: #111;
   --footer-color: #111;
 }
@@ -18,22 +18,31 @@
   /* width: 100vw; */
 }
 
-.navbar{
+.navbar {
   background-color: var(--navbar-color);
   width: 100vw;
   height: 10vh;
 }
 
-.body{
+.body {
   width: 100vw;
   height: 80vh;
+}
+
+.body h1 {
+  color: var(--primary-color);
+  margin: 1rem 0 0 1rem;
+  /*top right bottom left*/
+}
+
+.body-itens {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap : wrap;
+  flex-wrap: wrap;
 }
 
-.footer{
+.footer {
   background-color: var(--footer-color);
   width: 100vw;
   height: 10vh;
