@@ -10,7 +10,7 @@
 
 - **Inline** -> tamanho (width) do elemento seja o tamanho do conteúdo
 
-- _Conceito de caixas dentro de outras caixas_ ->
+- _Conceito de caixas dentro de outras caixas_
 
 ## Propriedades
 
@@ -67,6 +67,7 @@
 ## Propriedades para elementos-filhos
 
 ### flex-grow
+
 ```css
 .flex-item {
   flex-grow: <numero>; /* o valor default(padrão) é 0 */
@@ -74,20 +75,22 @@
 ```
 
 ### flex-shrink
+
 ```css
-  .flex-item {
-    flex-shrink: <número>; /* o valor padrão é 0 */
-  }
+.flex-item {
+  flex-shrink: <número>; /* o valor padrão é 0 */
+}
 ```
+
 ### Material Referência
-#### [Flexbox CSS: Guia Completo, Elementos e Exemplos](https://www.alura.com.br/artigos/css-guia-do-flexbox?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=20987928442&hsa_grp=157916200306&hsa_ad=689395782879&hsa_src=g&hsa_tgt=dsa-2273097816642&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjw1920BhA3EiwAJT3lScBlZzps5VuGpGXFDbpAJ_CxLiJOm1JuqovzW3-ZW-a2oT0K-XOJgxoCH1cQAvD_BwE) 
+
+#### [Flexbox CSS: Guia Completo, Elementos e Exemplos](https://www.alura.com.br/artigos/css-guia-do-flexbox?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=20987928442&hsa_grp=157916200306&hsa_ad=689395782879&hsa_src=g&hsa_tgt=dsa-2273097816642&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjw1920BhA3EiwAJT3lScBlZzps5VuGpGXFDbpAJ_CxLiJOm1JuqovzW3-ZW-a2oT0K-XOJgxoCH1cQAvD_BwE)
 
 ### Videos de referência
 
 #### [DESCOMPLICANDO o CSS Flexbox 🤯](https://www.youtube.com/watch?v=gOMK_xruAqc)
 
 #### [Descomplicando CSS Grid (na prática!) | com Mayk Brito](https://www.youtube.com/watch?v=lh0qB15vRoo)
-
 
 <!-- Display Flex
 	justify-content -> onde o elemento começa
