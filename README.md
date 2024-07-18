@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# CSS Flexbox
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Conceito Box Model
 
-## Available Scripts
+- Tudo é interpretado como uma **box**
 
-In the project directory, you can run:
+- Uma **box** tem uma **_propriedade_** chamada "display: block"
 
-### `npm start`
+- **Block** -> Sua propriedade width (largura) vai ocupar todo o espaço disponível em tela
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Inline** -> tamanho (width) do elemento seja o tamanho do conteúdo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- _Conceito de caixas dentro de outras caixas_ ->
 
-### `npm test`
+## Propriedades
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### display
 
-### `npm run build`
+```css
+.container {
+  display: flex; /* or inline-flex */
+}
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## flex-direction
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```css
+.flex-container {
+  flex-direction: row | row-reverse | column | column-reverse;
+}
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## flex-wrap
 
-### `npm run eject`
+```css
+.flex-container {
+  flex-wrap: nowrap | wrap | wrap-reverse;
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## justify-content
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```css
+.flex-container {
+  justify-content: flex-start | flex-end | center | space-between | space-around
+    | space-evenly;
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## align-items
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```css
+.flex-container {
+  align-items: stretch | flex-start | flex-end | center | baseline;
+}
+```
 
-## Learn More
+## align-content
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```css
+.flex-container {
+  align-content: flex-start | flex-end | center | space-between | space-around |
+    stretch;
+}
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Propriedades para elementos-filhos
 
-### Code Splitting
+### flex-grow
+```css
+.flex-item {
+  flex-grow: <numero>; /* o valor default(padrão) é 0 */
+}
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### flex-shrink
+```css
+  .flex-item {
+    flex-shrink: <número>; /* o valor padrão é 0 */
+  }
+```
+### Material Referência
+#### [Flexbox CSS: Guia Completo, Elementos e Exemplos](https://www.alura.com.br/artigos/css-guia-do-flexbox?utm_term=&utm_campaign=&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=20987928442&hsa_grp=157916200306&hsa_ad=689395782879&hsa_src=g&hsa_tgt=dsa-2273097816642&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gad_source=1&gclid=CjwKCAjw1920BhA3EiwAJT3lScBlZzps5VuGpGXFDbpAJ_CxLiJOm1JuqovzW3-ZW-a2oT0K-XOJgxoCH1cQAvD_BwE) 
 
-### Analyzing the Bundle Size
+### Videos de referência
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### [DESCOMPLICANDO o CSS Flexbox 🤯](https://www.youtube.com/watch?v=gOMK_xruAqc)
 
-### Making a Progressive Web App
+#### [Descomplicando CSS Grid (na prática!) | com Mayk Brito](https://www.youtube.com/watch?v=lh0qB15vRoo)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+<!-- Display Flex
+	justify-content -> onde o elemento começa
+		flex-start - default
+		flex-end - final da tela
+		space-around - espaço ao redor
+		space-between - espaço entre os elementos
+		space-evenly - espaço constante entre elementos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+	align-items -> alinhar no meio (eixo principal)
+		flex-start
+		flex-end
+		center
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+	gap: 1rem (10 px) -> não necessário margin
+-->
